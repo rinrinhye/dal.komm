@@ -1,0 +1,37 @@
+.new-item {
+  text-align: center;
+
+  &-image {
+    width: 9.6875vw;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    img {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-info {
+    .new-item-name-group {
+      margin-bottom: 20px;
+      color: $orangey-red;
+
+      h6 {
+        font-weight: 500;
+        font-size: 1.25vw;
+        margin-bottom: 6px;
+      }
+      span {
+        font-size: 0.8333333333vw;
+      }
+    }
+
+    .new-item-description {
+      color: #252525;
+      font-size: 0.733333vw;
+      line-height: 20px;
+    }
+  }
+}

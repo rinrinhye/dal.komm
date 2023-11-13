@@ -1,0 +1,128 @@
+.new-items {
+  background-image: url(../../assets/bg_news-item.png);
+  width: 100vw;
+  height: 50vw;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 40.3125vw 46.25vw;
+  background-position: 0 0;
+
+  &-wrapper {
+    display: flex;
+    max-width: 1440px;
+
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &-header {
+    width: 26.1979166667vw;
+    padding-top: 6.25vw;
+
+    .tag,
+    .title {
+      color: $orangey-red;
+    }
+
+    .tag {
+      font-family: "Titan One", sans-serif;
+      font-size: 1.9791666667vw;
+    }
+
+    .title {
+      font-size: 60px;
+      font-weight: 700;
+      margin-top: 1.0416666667vw;
+    }
+
+    .info {
+      color: #1a1a1a;
+      letter-spacing: 0.01em;
+      line-height: 2.0833333333vw;
+      font-size: 1.2541666667vw;
+      width: 25vw;
+      margin-top: 1.5625vw;
+    }
+
+    .link {
+      display: inline-block;
+      font-size: 0.8854166667vw;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-top: 8.8541666667vw;
+      position: relative;
+    }
+  }
+
+  &-content {
+    position: absolute;
+    // left: 624px;
+    // top: 100px;
+    left: 44%;
+    top: 26%;
+    width: 50.6458333333vw;
+    overflow: hidden;
+  }
+
+  .new-items-slide-list {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+
+    .new-items-slide-item {
+      flex-shrink: 0;
+      margin-right: 70px;
+      padding-top: 7.5vw;
+
+      &.is-active {
+        padding-top: 0;
+        width: 13.9583333333vw;
+
+        .new-item-image {
+          width: 100%;
+          height: 100%;
+          transition: all 100ms ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.nav-wrapper {
+  position: absolute;
+  left: 624px;
+  top: 100px;
+  left: 44%;
+  top: 26%;
+  width: 53.6458333333vw;
+}
+.prev,
+.next {
+  width: 20px;
+  height: 25px;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.prev {
+  background: url(../../assets/btn_nav_prev.png) 0 0 no-repeat;
+  left: -2.0833333333vw;
+  top: 13.75vw;
+}
+
+.next {
+  background: url(../../assets/btn_nav_next.png) 0 0 no-repeat;
+  left: 16.1458333333vw;
+  top: 13.75vw;
+}
+
+// .new-items-slide-list {
+//   position: absolute;
+//   display: flex;
+//   flex-shrink: 1;
+// }

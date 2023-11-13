@@ -1,0 +1,17 @@
+.floating-badge {
+  position: sticky;
+  width: 100%;
+  bottom: 40px;
+
+  .floating-content {
+    position: relative;
+    right: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    .floating-icon {
+      width: 100px;
+    }
+  }
+}
