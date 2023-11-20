@@ -1,17 +1,57 @@
 .floating-badge {
-  position: sticky;
-  width: 100%;
+  position: fixed;
   bottom: 40px;
+  width: 96px;
+  height: 96px;
+  cursor: pointer;
+  right: 15vw;
 
   .floating-content {
     position: relative;
-    right: 200px;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-start;
 
+    .text {
+      opacity: 0;
+      transition: opacity 300ms ease-in-out;
+      position: absolute;
+      top: -80px;
+      left: -10px;
+
+      p {
+        line-height: 1.2em;
+        color: white;
+        width: 120%;
+        height: 64px;
+
+        text-align: center;
+        border-radius: 10px;
+        background-color: $red-orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      p::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        border-top: 10px solid $red-orange;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+      }
+    }
+
     .floating-icon {
-      width: 100px;
+      width: 100%;
+
+      &:hover + .text {
+        opacity: 1;
+      }
     }
   }
 }
