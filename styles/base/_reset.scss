@@ -79,17 +79,16 @@ time,
 mark,
 audio,
 video {
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 100%;
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  font-family: "Noto Sans KR", sans-serif;
-  box-sizing: border-box;
-
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+// HTML5 display-role reset for older browsers
+
 article,
 aside,
 details,
@@ -103,25 +102,29 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul,
 li {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
   content: "";
-  content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -130,6 +133,6 @@ table {
 // 출처: https://parkjh7764.tistory.com/80 [HwanE Develop Blog:티스토리]
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
