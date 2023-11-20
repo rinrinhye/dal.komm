@@ -1,7 +1,7 @@
 const noticeSection = document.querySelector(".notice");
 const noticeContent = document.querySelector(".notice-content");
+
 function showNoticeContent() {
-  // console.log(window.innerHeight - noticeSection.getBoundingClientRect().y);
   if (240 <= window.innerHeight - noticeSection.getBoundingClientRect().y) {
     noticeContent.classList.add("fade-down");
   } else {
@@ -9,4 +9,4 @@ function showNoticeContent() {
   }
 }
 
-window.addEventListener("scroll", showNoticeContent);
+window.addEventListener("scroll", _.throttle(showNoticeContent, 500));
