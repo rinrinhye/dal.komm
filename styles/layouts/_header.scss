@@ -1,12 +1,12 @@
 .header {
-  height: 120px;
-  padding: 0 100px;
   background-color: rgba(255, 255, 255, 0.75);
-  width: 100vw;
-  transition: transform 300ms ease-in-out;
+  height: 120px;
+  left: 0;
+  padding: 0 100px;
   position: fixed;
   top: 0;
-  left: 0;
+  transition: transform 300ms ease-in-out;
+  width: 100%;
   z-index: 100;
 
   &.is-scrolled {
@@ -34,7 +34,3 @@
     }
   }
 }
-
-// body {
-//   background-color: navy;
-// }

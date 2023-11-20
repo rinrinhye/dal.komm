@@ -1,5 +1,5 @@
 .notice {
-  width: 100vw;
+  width: 100%;
   padding-bottom: 6.4583333333vw;
 
   &-header {
@@ -31,7 +31,6 @@
 
   &-content {
     display: flex;
-    // padding-bottom: 6.4583333333vw;
     justify-content: center;
     margin: 0 auto;
     transform: translate3d(0, -100px, 0);

@@ -2,7 +2,10 @@
   position: relative;
   overflow: hidden;
   height: 100%;
-  width: 100vw;
+  width: 100%;
+  animation-name: showSlide;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
 
   &-list {
     display: flex;
@@ -25,6 +28,7 @@
           width: 100%;
         }
       }
+
       .text-group {
         position: absolute;
         top: 50%;
@@ -37,6 +41,7 @@
           font-size: 54px;
           line-height: 1.5em;
         }
+
         a {
           display: inline-block;
           margin-top: 52px;
@@ -55,6 +60,7 @@
     bottom: 5%;
     display: flex;
     justify-content: center;
+    z-index: 10;
 
     span {
       cursor: pointer;
@@ -70,5 +76,20 @@
         opacity: 1;
       }
     }
+  }
+}
+
+@keyframes showSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+
+  50% {
+    transform: translateY(1%);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
